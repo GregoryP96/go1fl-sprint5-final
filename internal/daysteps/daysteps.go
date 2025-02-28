@@ -60,8 +60,9 @@ func (ds DaySteps) ActionInfo() string {
 	dist := spentenergy.Distance(ds.Steps)
 	spentCalories := spentenergy.WalkingSpentCalories(ds.Steps, ds.Weight, ds.Height, ds.Duration)
 
-	result := fmt.Sprintf(`Количество шагов: %d.
-						   Дистанция составила %.2f км.
-						   Вы сожгли %.2f ккал.`, ds.Steps, dist, spentCalories)
+	result := fmt.Sprintf("Количество шагов: %d.\n"+
+		"Дистанция составила %.2f км.\n"+
+		"Вы сожгли %.2f ккал.\n", ds.Steps, dist, spentCalories)
+
 	return result
 }

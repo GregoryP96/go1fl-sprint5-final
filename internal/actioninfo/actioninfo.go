@@ -16,6 +16,6 @@ func Info(dataset []string, dp DataParser) {
 			fmt.Println("Error:", err)
 			continue
 		}
-		dp.ActionInfo()
+		fmt.Println(dp.ActionInfo())
 	}
 }

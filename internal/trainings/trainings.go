@@ -79,11 +79,11 @@ func (t Training) ActionInfo() string {
 		return "неизвестный тип тренировки"
 	}
 
-	result := fmt.Sprintf(`Тип тренировки: %s
-						   Длительность: %.2f ч.
-						   Дистанция: %.2f км.
-						   Скорость: %.2f км/ч
-						   Сожгли калорий: %.2f`,
+	result := fmt.Sprintf("Тип тренировки: %s\n"+
+		"Длительность: %.2f ч.\n"+
+		"Дистанция: %.2f км.\n"+
+		"Скорость: %.2f км/ч\n"+
+		"Сожгли калорий: %.2f\n",
 		typeOfTraining, t.Duration.Hours(), dist, avrSpeed, spentCalories)
 
 	return result
